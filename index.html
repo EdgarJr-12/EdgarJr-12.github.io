@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <link rel ="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certus Go</title>
+    <title>ValoTrainer</title>
 </head>
+
+    <!-- Header -->
 <body>
-    Certus Go 2026 - Benvenido
+    <header class="header">
+        <h1 class="logo">ValoTrainer</h1>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sensibilidad">Sensibilidad</a></li>
+                <li><a href="#rutinas">Rutinas</a></li>
+                <li><a href="#guias">Guías</a></li>
+                <li><a href="#progreso">Progreso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ <!-- Inicio -->
+    <main> 
+        <section id="inicio" class="section">
+            <h2>Mejora tu aim en Valorant</h2>
+            <p>Herramientas, rutinas y consejos para subir de nivel.</p>
+            <a href="#sensibilidad" class="btn">Empezar</a>
+        </section>
+
+ <!-- Sensibilidad -->
+        <section id="sensibilidad" class="section">
+            <h2>Calculadora de Sensibilidad</h2>
+
+            <div class="form">
+                <label for="dpi">DPI:</label>
+                <input type="number" id="dpi" placeholder="Ej: 800">
+
+                <label for="sens">Sensibilidad:</label>
+                <input type="number" step="0.01" id="sens" placeholder="Ej: 0.25">
+
+                <button id="calcular">Calcular eDPI</button>
+
+                <p id="resultado"></p>
+            </div>
+        </section>
+
+    <!-- Rutinas -->
+        <section id="rutinas" class="section">
+            <h2>Rutinas de Entrenamiento</h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>Rutina Básica (10 min)</h3>
+                    <p>5 min deathmatch + 5 min práctica de aim.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Rutina Intermedia</h3>
+                    <p>15 min deathmatch + práctica de crosshair placement.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+    <!-- Guias -->
+        <section id="guias" class="section">
+            <h2>Guías</h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>Mejora tu Aim</h3>
+                    <p>Aprende a controlar tu sensibilidad y precisión.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Errores comunes</h3>
+                    <p>Evita los fallos más típicos al disparar.</p>
+                </article>
+
+            </div>
+        </section>
+    
+    <!-- Progreso -->
+        <section id="progreso" class="section">
+            <h2>Tu Progreso</h2>
+
+            <div class="form">
+                <label>Partidas jugadas:</label>
+                <input type="number">
+
+                <label>Kills:</label>
+                <input type="number">
+
+                <label>Muertes:</label>
+                <input type="number">
+
+                <button>Guardar</button>
+            </div>
+        </section>
+            
+        
+ 
+    </main>
+
+    <footer>
+     <p> © 2026 ValoTrainer - Mejora en Valorant </p>
+    </footer>
+
 </body>
+
 </html>
